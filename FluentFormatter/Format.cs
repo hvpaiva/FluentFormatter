@@ -13,7 +13,7 @@ namespace FluentFormatter
         /// <param name="pattern">The regex pattern format.</param>
         /// <param name="replacement">The replacement pattern.</param>
         /// <param name="options">
-        ///     The <see cref="RegexOptions"/>. The <see cref="RegexOptions.Compiled"/> is default.
+        ///     The <see cref="RegexOptions" />. The <see cref="RegexOptions.Compiled" /> is default.
         /// </param>
         public Format(string pattern, string replacement, RegexOptions options = RegexOptions.Compiled)
         {

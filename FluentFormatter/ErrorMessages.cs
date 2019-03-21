@@ -1,6 +1,5 @@
 namespace FluentFormatter
 {
-
     /// <summary>
     ///     The internal error messages.
     /// </summary>

@@ -1,7 +1,5 @@
 using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Text;
 
 namespace FluentFormatter
 {
@@ -50,6 +48,5 @@ namespace FluentFormatter
             if (string.IsNullOrEmpty(str))
                 throw new ArgumentException(string.Format(message, paramName), paramName);
         }
-
     }
 }

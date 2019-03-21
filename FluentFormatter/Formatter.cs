@@ -16,7 +16,7 @@ namespace FluentFormatter
     ///         <see cref="M:FluentFormatter.Formatter.IsUnformatted(System.String)" />,
     ///         <see cref="M:FluentFormatter.Formatter.IsFormattable(System.String)" /> and
     ///         <see cref="M:FluentFormatter.Formatter.AssertFormattable(System.String)" />
-    ///         following the formatted <see cref="IFormat"/> and unformatted
+    ///         following the formatted <see cref="IFormat" /> and unformatted
     ///         <see cref="IFormat" />.
     ///     </para>
     /// </remarks>
