@@ -1,0 +1,63 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/highlander/Desenvolvimento/Pessoal/FluentFormatter/FluentFormatter.Test/FluentFormatter.Test.csproj",
+    "projectName": "FluentFormatter.Test",
+    "projectPath": "/home/highlander/Desenvolvimento/Pessoal/FluentFormatter/FluentFormatter.Test/FluentFormatter.Test.csproj",
+    "outputPath": "/home/highlander/Desenvolvimento/Pessoal/FluentFormatter/FluentFormatter.Test/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.2"
+    ],
+    "frameworks": {
+      "netcoreapp2.2": {
+        "projectReferences": {
+          "/home/highlander/Desenvolvimento/Pessoal/FluentFormatter/FluentFormatter/FluentFormatter.csproj": {
+            "projectPath": "/home/highlander/Desenvolvimento/Pessoal/FluentFormatter/FluentFormatter/FluentFormatter.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.2": {
+      "dependencies": {
+        "FluentAssertions": {
+          "target": "Package",
+          "version": "[5.6.0, )"
+        },
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "[15.9.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )",
+          "autoReferenced": true
+        },
+        "xunit": {
+          "target": "Package",
+          "version": "[2.4.0, )"
+        },
+        "xunit.runner.visualstudio": {
+          "target": "Package",
+          "version": "[2.4.0, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
