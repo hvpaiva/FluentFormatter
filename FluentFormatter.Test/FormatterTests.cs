@@ -35,43 +35,49 @@ namespace FluentFormatter.Test
         }
 
         [Fact]
-        public void Given_Empty_Value_Should_Throw_Exception_In_Format()
+        public void Given_Empty_Value_Should_Return_Empty_In_Format()
         {
             // Arrange
             IFormatter formatter = new TestedFormatter();
 
-            // Act and Assert
-            Assert.Throws<ArgumentException>(() => formatter.Format(""));
+            // Act
+            var formattedTest = formatter.Format("");
+
+            // Assert
+            Assert.Equal("", formattedTest);
         }
 
         [Fact]
-        public void Given_Empty_Value_Should_Throw_Exception_In_IsFormatted()
+        public void Given_Empty_Value_Should_Return_Empty_In_Unformat()
         {
             // Arrange
             IFormatter formatter = new TestedFormatter();
 
-            // Act and Assert
-            Assert.Throws<ArgumentException>(() => formatter.IsFormatted(""));
+            // Act
+            var unformattedTest = formatter.Unformat("");
+
+            // Assert
+            Assert.Equal("", unformattedTest);
         }
 
         [Fact]
-        public void Given_Empty_Value_Should_Throw_Exception_In_IsUnformatted()
+        public void Given_Empty_Value_Should_Return_True_In_IsFormatted()
         {
             // Arrange
             IFormatter formatter = new TestedFormatter();
 
             // Act and Assert
-            Assert.Throws<ArgumentException>(() => formatter.IsUnformatted(""));
+            Assert.True(formatter.IsFormatted(""));
         }
 
         [Fact]
-        public void Given_Empty_Value_Should_Throw_Exception_In_Unformat()
+        public void Given_Empty_Value_Should_Return_True_In_IsUnformatted()
         {
             // Arrange
             IFormatter formatter = new TestedFormatter();
 
             // Act and Assert
-            Assert.Throws<ArgumentException>(() => formatter.Unformat(""));
+            Assert.True(formatter.IsUnformatted(""));
         }
 
         [Fact]

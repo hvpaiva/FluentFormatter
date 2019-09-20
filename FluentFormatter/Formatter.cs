@@ -43,7 +43,6 @@ namespace FluentFormatter
         /// <inheritdoc />
         public string Format(string value)
         {
-            value.Guard(nameof(value));
             AssertFormattable(value);
 
             return IsFormatted(value)
@@ -54,7 +53,6 @@ namespace FluentFormatter
         /// <inheritdoc />
         public string Unformat(string value)
         {
-            value.Guard(nameof(value));
             AssertFormattable(value);
 
             return IsUnformatted(value)
@@ -65,17 +63,13 @@ namespace FluentFormatter
         /// <inheritdoc />
         public bool IsFormatted(string value)
         {
-            value.Guard(nameof(value));
-
-            return FormattedFormat.Pattern.IsMatch(value);
+            return value == string.Empty || FormattedFormat.Pattern.IsMatch(value);
         }
 
         /// <inheritdoc />
         public bool IsUnformatted(string value)
         {
-            value.Guard(nameof(value));
-
-            return UnformattedFormat.Pattern.IsMatch(value);
+            return value == string.Empty || UnformattedFormat.Pattern.IsMatch(value);
         }
 
         /// <inheritdoc />
